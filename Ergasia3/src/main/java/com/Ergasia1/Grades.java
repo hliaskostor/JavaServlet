@@ -62,5 +62,4 @@ public class Grades {
         this.tasks = tasks;
     }
 
-
 }
