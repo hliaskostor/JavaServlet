@@ -1,0 +1,78 @@
+	<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Register Student</title>
+</head>
+<body>
+<style>
+input[type=text] {
+ width: 80%;
+  background-color: Gray;
+  color: white;
+  padding: 10px;
+  margin: 5px ;
+  border: 6px;
+  border-radius: 10px;
+ 
+}
+
+input[type=submit] {
+  background-color: Gray;
+  
+}
+button[type=create] {
+   background-color: grey;
+  border-radius: 8px;
+  border-width: 0;
+  color: white;
+  cursor: pointer;
+   font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  margin: 0;
+  padding: 10px 12px;
+  text-align: center;
+}
+button[type=back] {
+   background-color: grey;
+  border-radius: 10px;
+  border-width: 0;
+  color: white;
+  cursor: pointer;
+   font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  margin: 0;
+  padding: 10px 12px;
+  text-align: center;
+}
+.center{
+display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+  border: 300px solid grey;}
+</style>
+</head>
+<body>
+ <div class="center">
+<br><br><br><br>
+<form action='RegisterStudServlet' method='post'>
+  <label for="username">Username:</label><br>
+  <input type="text" id="username" name="username" value=""><br>
+  <label for="password">Password:</label><br>
+  <input type="text" id="password" name="password" value=""><br><br>
+  <label for="name">Name:</label><br>
+  <input type="text" id="name" name="name" value=""><br><br>
+  <label for="surname">Surname:</label><br>
+  <input type="text" id="surname" name="surname" value=""><br><br>
+ <label for="semester">Semester:</label><br>
+ <input type="text" id="semester" name="semester" value=""><br><br>
+ <br><br><br>
+  <button type="create"> Create</button>
+  <button type="back" formaction="index.html">Back</button>
+   </div>
+</form>
+</body>
+</html>

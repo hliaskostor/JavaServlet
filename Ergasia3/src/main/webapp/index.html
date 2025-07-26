@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Home</title>
+<style>
+input[type=text] {
+ width: 80%;
+  background-color: Gray;
+  color: white;
+  padding: 10px;
+  margin: 5px ;
+  border: 6px;
+  border-radius: 10px; 
+}
+
+input[type=password] {
+ width: 80%;
+  background-color: Gray;
+  color: white;
+  padding: 10px;
+  margin: 5px ;
+  border: 6px;
+  border-radius: 10px;
+}
+
+input[type=submit] {
+  background-color: Gray;
+  
+}
+button[type=submit] {
+   background-color: grey;
+  border-radius: 8px;
+  border-width: 0;
+  color: white;
+  cursor: pointer;
+   font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  margin: 0;
+  padding: 10px 12px;
+  text-align: center;
+}
+button[type=back] {
+   background-color: grey;
+  border-radius: 10px;
+  border-width: 0;
+  color: white;
+  cursor: pointer;
+   font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  margin: 0;
+  padding: 10px 12px;
+  text-align: center;
+}
+.center{
+display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  border: 300px solid grey;}
+</style>
+</head>
+<body>
+
+
+ <div class="center">
+<br><br><br><br>
+<form action='findCategory' method='post' >
+  <label for="username">Username:</label><br>
+  <input type="text" id="username" name="username" value=""><br>
+  <label for="password">Password:</label><br>
+  <input type="password" id="password" name="password" value=""><br><br>
+  <button type="submit"> Submit</button>
+</form> 
+</div>
+
+
+<p align="left"> <button onclick="window.location.href = 'CreateUsers.html';"> <h3> Register as Professor </h3></button>
+<button onclick="window.location.href = 'CreateStud.html';"> <h3> Register as Student </h3></button></p>
+
+
+<p align="right"> <button onclick="window.location.href = 'SecretaryServlet.html';"> <h2> Secretary </h2></button> </p>
+
+
+</body>
+</html>

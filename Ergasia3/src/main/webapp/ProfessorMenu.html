@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Professor</title>
+<style>
+button{
+   background-color: grey;
+  border-radius: 10px;
+  border-width: 0;
+  color: white;
+  cursor: pointer;
+   font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  margin: 0;
+  padding: 10px 12px;
+  text-align: center;
+}
+.center{
+display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  border: 300px solid grey;}
+  h1 {
+color: #999999;
+font-family: arial, sans-serif;
+font-size: 30px;
+font-weight: bold;
+margin-top: 0px;
+margin-bottom: 1px;
+}
+</style>
+</head>
+<body>
+  <div class="center">
+<br><h1>Welcome Professor! Please choose!</h1><br>
+<br><br><br>
+
+
+<form action="MarksCourseProfServlet" method="post"><button > Marks/Course</button></form>
+<button onclick="window.location.href = 'ScoreEntry.html';"> Score Entry </button>
+<button onclick="window.location.href = 'logout.jsp';"> Logout</button>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Score Entry</title>
+</head>
+
+
+<style>
+input[type=text] {
+ width: 80%;
+  background-color: Gray;
+  color: white;
+  padding: 10px;
+  margin: 5px ;
+  border: 6px;
+  border-radius: 10px; 
+}
+
+input[type=password] {
+ width: 80%;
+  background-color: Gray;
+  color: white;
+  padding: 10px;
+  margin: 5px ;
+  border: 6px;
+  border-radius: 10px;
+}
+
+input[type=submit] {
+  background-color: Gray;
+  
+}
+button[type=submit] {
+   background-color: grey;
+  border-radius: 8px;
+  border-width: 0;
+  color: white;
+  cursor: pointer;
+   font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  margin: 0;
+  padding: 10px 12px;
+  text-align: center;
+}
+button[type=back] {
+   background-color: grey;
+  border-radius: 10px;
+  border-width: 0;
+  color: white;
+  cursor: pointer;
+   font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  margin: 0;
+  padding: 10px 12px;
+  text-align: center;
+}
+.center{
+display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  border: 300px solid grey;}
+</style>
+</head>
+
+<body>
+
+ <div class="center">
+<br><br><br><br>
+<form action='ScoreEntryServlet' method='post' >
+  <label for="student_ID">Student ID:</label><br>
+  <input type="text" id="student_ID" name="student_ID" value=""><br>
+  <label for="grade">Grade:</label><br>
+  <input type="text" id="grade" name="grade" value=""><br><br>
+  <button type="submit"> Submit</button>
+</form> 
+
+<button onclick="window.location.href = 'logout.jsp';"> Logout</button>
+</div>
+
+
+
+
+
+</body>
+</html>
