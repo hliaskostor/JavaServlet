@@ -1,7 +1,6 @@
 package com.Ergasia1;
 
 public class Grades {
-
     String courseName;
     int courseCode;
     String examinationDate;
